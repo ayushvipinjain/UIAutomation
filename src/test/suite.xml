@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="UI Automation Test Suite" verbose="1" >
+    <test name="Automation Test" >
+        <classes>
+            <class name="com.thoughtworks.SpreeTests"></class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.thoughtworks.reporting.ExtentReporterNG"></listener>
+    </listeners>
+</suite>
