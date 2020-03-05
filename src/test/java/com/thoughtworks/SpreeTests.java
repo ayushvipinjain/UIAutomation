@@ -1,6 +1,5 @@
 package com.thoughtworks;
 
-import com.beust.jcommander.Parameter;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
-
+import com.thoughtworks.utils.Properties;
 import java.util.concurrent.TimeUnit;
 
 public class SpreeTests {
@@ -27,7 +26,7 @@ public class SpreeTests {
             WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
         }
-        driver.navigate().to("https://spree-vapasi.herokuapp.com");
+        driver.navigate().to(Properties.baseUrl);
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
         driver.manage().window().maximize();
     }
@@ -35,8 +34,8 @@ public class SpreeTests {
     @Test
     public void validateLoginIsSuccessful() {
         driver.findElement(By.id("link-to-login")).click();
-        driver.findElement(By.id("spree_user_email")).sendKeys("testuser@gmail.com");
-        driver.findElement( By.id("spree_user_password")).sendKeys("testuser");
+        driver.findElement(By.id("spree_user_email")).sendKeys(Properties.userName);
+        driver.findElement( By.id("spree_user_password")).sendKeys(Properties.password);
         driver.findElement(By.xpath("//input[@type='submit'][@value='Login']")).click();
         Assert.assertEquals(driver.findElement(By.linkText("My Account")).isDisplayed(),true,"Verify Login is Successful");
     }
