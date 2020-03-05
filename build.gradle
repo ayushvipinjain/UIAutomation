@@ -23,6 +23,6 @@ test{
     testLogging.showStandardStreams=true
     useTestNG(){
         useDefaultListeners = true
-        suites 'src/test/suite.xml'
+        suites 'src/test/testing.xml'
     }
 }
