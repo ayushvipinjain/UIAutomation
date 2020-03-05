@@ -11,8 +11,6 @@ import org.testng.annotations.Test;
 
 public class SpreeTests {
 
-
-
     @Parameters("browser")
     @Test(groups = "testGroup")
     public void logintest(@Optional String browser){
@@ -21,7 +19,7 @@ public class SpreeTests {
 
     @Parameters("browser")
     @Test
-    public void valoidateProductSearch(@Optional String browser){
+    public void validateProductSearch(@Optional String browser){
 
     }
 }
