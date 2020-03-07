@@ -5,6 +5,7 @@
         <classes>
             <class name="com.thoughtworks.SpreeTests"></class>
             <class name="com.thoughtworks.JourneyTest"></class>
+            <class name="com.thoughtworks.JourneyTestPO"></class>
         </classes>
     </test>
     <listeners>
