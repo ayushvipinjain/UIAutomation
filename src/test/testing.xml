@@ -4,6 +4,7 @@
         <parameter name="browser" value="chrome"></parameter>
         <classes>
             <class name="com.thoughtworks.SpreeTests"></class>
+            <class name="com.thoughtworks.JourneyTest"></class>
         </classes>
     </test>
     <listeners>
