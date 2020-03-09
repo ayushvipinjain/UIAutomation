@@ -1,8 +1,9 @@
-package com.thoughtworks;
+package com.thoughtworks.tests;
 
 import com.thoughtworks.pages.HomePage;
 import com.thoughtworks.pages.ProductListingPage;
 import com.thoughtworks.pages.ShoppingPage;
+import com.thoughtworks.tests.BaseTest;
 import com.thoughtworks.utils.Properties;
 import org.testng.Assert;
 import org.testng.annotations.Test;

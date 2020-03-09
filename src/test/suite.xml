@@ -2,7 +2,7 @@
 <suite name="UI Automation Test Suite" verbose="1" >
     <test name="Automation Test" >
         <classes>
-            <class name="com.thoughtworks.SpreeTests"></class>
+            <class name="com.thoughtworks.tests.SpreeTests"></class>
         </classes>
     </test>
     <listeners>

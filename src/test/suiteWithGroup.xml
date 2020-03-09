@@ -8,7 +8,7 @@
         </groups>
         
         <classes>
-            <class name="com.thoughtworks.SpreeTests"></class>
+            <class name="com.thoughtworks.tests.SpreeTests"></class>
         </classes>
     </test>
     <listeners>

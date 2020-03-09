@@ -9,14 +9,14 @@
         </groups>
         
         <classes>
-            <class name="com.thoughtworks.SpreeTests"></class>
+            <class name="com.thoughtworks.tests.SpreeTests"></class>
         </classes>
     </test>
 
     <test name="Firefox Tests" verbose="2">
         <parameter name="browser" value="firefox"></parameter>
         <classes>
-            <class name="com.thoughtworks.SpreeTests"></class>
+            <class name="com.thoughtworks.tests.SpreeTests"></class>
         </classes>
     </test>
     <listeners>

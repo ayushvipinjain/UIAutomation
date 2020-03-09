@@ -1,4 +1,4 @@
-package com.thoughtworks;
+package com.thoughtworks.tests;
 
 import com.thoughtworks.utils.Properties;
 import org.openqa.selenium.By;

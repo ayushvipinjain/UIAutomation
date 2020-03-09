@@ -1,4 +1,4 @@
-package com.thoughtworks;
+package com.thoughtworks.tests;
 
 import com.thoughtworks.utils.Properties;
 import io.github.bonigarcia.wdm.WebDriverManager;
