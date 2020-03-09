@@ -19,14 +19,7 @@ public class BaseTest {
     @BeforeMethod(alwaysRun = true)
     public void setUp(String browser ) throws InterruptedException {
 
-        if(browser.equals("chrome")){
-            WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
-        }
-        else{
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
-        }
+        driver = DriverFactory.getDriver(browser);
         driver.navigate().to(Properties.baseUrl);
         driver.manage().timeouts().implicitlyWait(10000, TimeUnit.MILLISECONDS);
         driver.manage().window().maximize();
@@ -36,4 +29,5 @@ public class BaseTest {
     public void cleanSetup(){
         driver.quit();
     }
+
 }

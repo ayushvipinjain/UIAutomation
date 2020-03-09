@@ -3,9 +3,9 @@
     <test name="Automation Test" >
         <parameter name="browser" value="chrome"></parameter>
         <classes>
-<!--            <class name="com.thoughtworks.tests.SpreeTests"></class>-->
-<!--            <class name="com.thoughtworks.tests.JourneyTest"></class>-->
-<!--            <class name="com.thoughtworks.tests.JourneyTestPO"></class>-->
+            <class name="com.thoughtworks.tests.SpreeTests"></class>
+            <class name="com.thoughtworks.tests.JourneyTest"></class>
+            <class name="com.thoughtworks.tests.JourneyTestPO"></class>
             <class name="com.thoughtworks.tests.DataDrivenTest"></class>
         </classes>
     </test>
