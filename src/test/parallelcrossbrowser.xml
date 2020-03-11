@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="UI Automation Test Suite" verbose="1" parallel="tests" thread-count="2">
+    <test name="Chrome Test" parallel="methods">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.thoughtworks.tests.SpreeTests"></class>
+            <class name="com.thoughtworks.tests.JourneyTest"></class>
+            <class name="com.thoughtworks.tests.JourneyTestPO"></class>
+            <class name="com.thoughtworks.tests.DataDrivenTest"></class>
+        </classes>
+    </test>
+    <test name="Firefox Test"  parallel="methods">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes >
+            <class name="com.thoughtworks.tests.SpreeTests"></class>
+            <class name="com.thoughtworks.tests.JourneyTest"></class>
+            <class name="com.thoughtworks.tests.JourneyTestPO"></class>
+            <class name="com.thoughtworks.tests.DataDrivenTest"></class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.thoughtworks.reporting.ExtentReporterNG"></listener>
+    </listeners>
+</suite>
