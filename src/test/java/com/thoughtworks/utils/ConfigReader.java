@@ -29,4 +29,8 @@ public class ConfigReader {
     public String getPassword() {
         return properties.getProperty("password");
     }
+
+    public String getExecutionType(){
+        return properties.getProperty("exectype");
+    }
 }

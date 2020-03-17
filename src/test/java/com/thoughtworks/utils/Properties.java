@@ -7,4 +7,5 @@ public class Properties {
     public static final String baseUrl = propertiesReader.getBaseUrl();
     public static final String userName = propertiesReader.getUserName();
     public static final String password = propertiesReader.getPassword();
+    public static final String execType = propertiesReader.getExecutionType();
 }

@@ -9,6 +9,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
@@ -17,7 +18,7 @@ public class BaseTest {
 
     @Parameters("browser")
     @BeforeMethod(alwaysRun = true)
-    public void setUp(String browser ) throws InterruptedException {
+    public void setUp(String browser ) throws InterruptedException, MalformedURLException {
 
         driver = DriverFactory.getDriver(browser);
         driver.navigate().to(Properties.baseUrl);
@@ -27,7 +28,6 @@ public class BaseTest {
 
     @AfterMethod(alwaysRun = true)
     public void cleanSetup(){
-        driver.quit();
+        driver.close();
     }
-
 }
