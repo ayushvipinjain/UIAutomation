@@ -28,6 +28,11 @@ public class BaseTest {
 
     @AfterMethod(alwaysRun = true)
     public void cleanSetup(){
-        driver.close();
+        try {
+            driver.close();
+            driver.quit();
+        }
+        catch (Exception ex){
+        }
     }
 }

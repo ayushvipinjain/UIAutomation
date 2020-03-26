@@ -23,7 +23,7 @@ public class FirefoxDriverManager implements DriverManager {
     private WebDriver setDriver(String exectype) throws MalformedURLException {
         if(exectype.equals("grid")){
             DesiredCapabilities desiredCapabilities = DesiredCapabilities.firefox();
-            desiredCapabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.MAC);
+            desiredCapabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.ANY);
             desiredCapabilities.setCapability(CapabilityType.BROWSER_NAME,"firefox");
             FirefoxOptions capabilities = new FirefoxOptions();
             capabilities.merge(desiredCapabilities);

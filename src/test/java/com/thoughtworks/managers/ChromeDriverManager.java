@@ -24,7 +24,7 @@ public class ChromeDriverManager implements DriverManager{
 
         if(exectype.equals("grid")){
             DesiredCapabilities desiredCapabilities = DesiredCapabilities.chrome();
-            desiredCapabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.MAC);
+            desiredCapabilities.setCapability(CapabilityType.PLATFORM_NAME, Platform.ANY);
             desiredCapabilities.setCapability(CapabilityType.BROWSER_NAME,"chrome");
             ChromeOptions capabilities = new ChromeOptions();
             capabilities.merge(desiredCapabilities);
