@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'org.thoughtworks'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 sourceCompatibility = 1.8
 
@@ -33,3 +33,11 @@ test{
             suites 'src/test/' + suiteFile
     }
 }
+//task copyToLib(type: Copy) {
+//    into "$buildDir/output/lib"
+//    from configurations.runtime
+//}
+//
+//task testJar(type: Jar) {
+//    from sourceSets.test.output
+//}
