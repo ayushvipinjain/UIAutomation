@@ -33,9 +33,9 @@ Steps -
 
   * `java -jar -Dwebdriver.chrome.driver=<Path For Chrome Driver> selenium-server-standalone-3.141.59.jar -role node -hub   http://localhost:4444 `
 
-  * `java -jar -Dwebdriver.gecko.driver=<Path For GecoDriver for firefox> selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444 `
+  * `java -jar -Dwebdriver.gecko.driver=<Path For gecoDriver for firefox> selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444 `
 
-  * `java -jar -Dwebdriver.chrome.driver=<Path For Chrome Driver> -Dwebdriver.gecko.driver=<Path For GecoDriver for firefox> selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444 `
+  * `java -jar -Dwebdriver.chrome.driver=<Path For Chrome Driver> -Dwebdriver.gecko.driver=<Path For gecoDriver for firefox> selenium-server-standalone-3.141.59.jar -role node -hub http://localhost:4444 `
 
 
 References -
@@ -45,5 +45,5 @@ References -
 :point_right: https://www.selenium.dev/documentation/en/grid/
 * Chrome Driver
 :point_right: https://chromedriver.storage.googleapis.com/index.html?path=79.0.3945.36/
-* Firefoc Driver
+* Firefox Driver
 :point_right:https://github.com/mozilla/geckodriver/releases/tag/v0.26.0
